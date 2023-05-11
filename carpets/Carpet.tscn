@@ -1,0 +1,67 @@
+[gd_scene load_steps=3 format=3 uid="uid://bu6hf6hxgvt05"]
+
+[ext_resource type="Script" path="res://carpets/VPContainer.gd" id="2_edwtn"]
+[ext_resource type="Texture2D" uid="uid://c3sqdnrru6ovi" path="res://assets/quad.png" id="3_xxjod"]
+
+[node name="VPContainer" type="GridContainer"]
+clip_contents = true
+offset_right = 384.0
+offset_bottom = 384.0
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+columns = 3
+script = ExtResource("2_edwtn")
+
+[node name="Q1" type="TextureRect" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("3_xxjod")
+
+[node name="Q2" type="TextureRect" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("3_xxjod")
+
+[node name="Q3" type="TextureRect" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("3_xxjod")
+
+[node name="Q4" type="TextureRect" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("3_xxjod")
+
+[node name="Q5" type="TextureRect" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("3_xxjod")
+
+[node name="Q6" type="TextureRect" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("3_xxjod")
+
+[node name="Q7" type="TextureRect" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("3_xxjod")
+
+[node name="Q8" type="TextureRect" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("3_xxjod")
+
+[node name="Q9" type="TextureRect" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("3_xxjod")

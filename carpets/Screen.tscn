@@ -1,0 +1,64 @@
+[gd_scene load_steps=4 format=3 uid="uid://bbavyravfa7pk"]
+
+[ext_resource type="PackedScene" uid="uid://bu6hf6hxgvt05" path="res://carpets/Carpet.tscn" id="1_icmy7"]
+[ext_resource type="Script" path="res://carpets/GUICarpets.gd" id="1_ysbi1"]
+[ext_resource type="Script" path="res://carpets/CurrentCarpet.gd" id="3_cyewu"]
+
+[node name="Screen" type="MarginContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="GUI" type="HBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 100
+script = ExtResource("1_ysbi1")
+
+[node name="Carpet" parent="GUI" instance=ExtResource("1_icmy7")]
+layout_mode = 2
+
+[node name="Options" type="VBoxContainer" parent="GUI"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Button" type="Button" parent="GUI/Options"]
+layout_mode = 2
+text = "improve accuracy"
+
+[node name="Label" type="Label" parent="GUI/Options"]
+layout_mode = 2
+text = "current carpet:"
+
+[node name="CurrentCarpet" type="GridContainer" parent="GUI/Options"]
+layout_mode = 2
+columns = 3
+script = ExtResource("3_cyewu")
+
+[node name="Q1" type="CheckButton" parent="GUI/Options/CurrentCarpet"]
+layout_mode = 2
+
+[node name="Q2" type="CheckButton" parent="GUI/Options/CurrentCarpet"]
+layout_mode = 2
+
+[node name="Q3" type="CheckButton" parent="GUI/Options/CurrentCarpet"]
+layout_mode = 2
+
+[node name="Q4" type="CheckButton" parent="GUI/Options/CurrentCarpet"]
+layout_mode = 2
+
+[node name="Q5" type="CheckButton" parent="GUI/Options/CurrentCarpet"]
+layout_mode = 2
+
+[node name="Q6" type="CheckButton" parent="GUI/Options/CurrentCarpet"]
+layout_mode = 2
+
+[node name="Q7" type="CheckButton" parent="GUI/Options/CurrentCarpet"]
+layout_mode = 2
+
+[node name="Q8" type="CheckButton" parent="GUI/Options/CurrentCarpet"]
+layout_mode = 2
+
+[node name="Q9" type="CheckButton" parent="GUI/Options/CurrentCarpet"]
+layout_mode = 2
+
+[connection signal="pressed" from="GUI/Options/Button" to="GUI" method="_on_button_pressed"]
+[connection signal="new_carpet" from="GUI/Options/CurrentCarpet" to="GUI" method="_on_current_carpet_new_carpet"]
