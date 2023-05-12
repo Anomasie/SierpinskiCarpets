@@ -14,54 +14,36 @@ script = ExtResource("2_edwtn")
 
 [node name="Q1" type="TextureRect" parent="."]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
 texture = ExtResource("3_xxjod")
 
 [node name="Q2" type="TextureRect" parent="."]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
 texture = ExtResource("3_xxjod")
 
 [node name="Q3" type="TextureRect" parent="."]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
 texture = ExtResource("3_xxjod")
 
 [node name="Q4" type="TextureRect" parent="."]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
 texture = ExtResource("3_xxjod")
 
 [node name="Q5" type="TextureRect" parent="."]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
 texture = ExtResource("3_xxjod")
 
 [node name="Q6" type="TextureRect" parent="."]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
 texture = ExtResource("3_xxjod")
 
 [node name="Q7" type="TextureRect" parent="."]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
 texture = ExtResource("3_xxjod")
 
 [node name="Q8" type="TextureRect" parent="."]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
 texture = ExtResource("3_xxjod")
 
 [node name="Q9" type="TextureRect" parent="."]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
 texture = ExtResource("3_xxjod")

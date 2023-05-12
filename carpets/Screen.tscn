@@ -28,9 +28,17 @@ text = "Sierpinski Carpets"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Button" type="Button" parent="GUI/Options"]
+[node name="AccuracyButton" type="Button" parent="GUI/Options"]
 layout_mode = 2
 text = "improve accuracy"
+
+[node name="AddLineButton" type="Button" parent="GUI/Options"]
+layout_mode = 2
+text = "add line"
+
+[node name="DelLineButton" type="Button" parent="GUI/Options"]
+layout_mode = 2
+text = "delete line"
 
 [node name="Label" type="Label" parent="GUI/Options"]
 layout_mode = 2
@@ -82,5 +90,7 @@ text = "ln3/ln2"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[connection signal="pressed" from="GUI/Options/Button" to="GUI" method="_on_button_pressed"]
+[connection signal="pressed" from="GUI/Options/AccuracyButton" to="GUI" method="_on_button_pressed"]
+[connection signal="pressed" from="GUI/Options/AddLineButton" to="GUI" method="_new_line_pressed"]
+[connection signal="pressed" from="GUI/Options/DelLineButton" to="GUI" method="_del_line_pressed"]
 [connection signal="new_carpet" from="GUI/Options/CurrentCarpet" to="GUI" method="_on_current_carpet_new_carpet"]
