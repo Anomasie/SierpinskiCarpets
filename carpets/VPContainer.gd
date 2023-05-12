@@ -17,7 +17,7 @@ func delete_line():
 	self.columns -= 1
 	Children = self.get_children()
 	for i in len(Children) - self.columns ** 2:
-		Children[i].queue_free()
+		Children[i + self.columns ** 2].queue_free()
 
 func load_coding(new_coding=coding):
 	coding = new_coding

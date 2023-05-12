@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://cnbnf33hrtpop"]
+
+[ext_resource type="Script" path="res://carpets/CarpetSelection.gd" id="1_whlym"]
+
+[node name="CurrentCarpet" type="GridContainer"]
+size_flags_horizontal = 4
+columns = 3
+script = ExtResource("1_whlym")
+
+[node name="Q1" type="CheckButton" parent="."]
+layout_mode = 2
+
+[node name="Q2" type="CheckButton" parent="."]
+layout_mode = 2
+
+[node name="Q3" type="CheckButton" parent="."]
+layout_mode = 2
+
+[node name="Q4" type="CheckButton" parent="."]
+layout_mode = 2
+
+[node name="Q5" type="CheckButton" parent="."]
+layout_mode = 2
+
+[node name="Q6" type="CheckButton" parent="."]
+layout_mode = 2
+
+[node name="Q7" type="CheckButton" parent="."]
+layout_mode = 2
+
+[node name="Q8" type="CheckButton" parent="."]
+layout_mode = 2
+
+[node name="Q9" type="CheckButton" parent="."]
+layout_mode = 2

@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://bu6hf6hxgvt05" path="res://carpets/Carpet.tscn" id="1_icmy7"]
 [ext_resource type="Script" path="res://carpets/GUICarpets.gd" id="1_ysbi1"]
-[ext_resource type="Script" path="res://carpets/CurrentCarpet.gd" id="3_cyewu"]
+[ext_resource type="PackedScene" uid="uid://cnbnf33hrtpop" path="res://carpets/CarpetSelection.tscn" id="3_12gnp"]
 
 [node name="Screen" type="MarginContainer"]
 offset_right = 40.0
@@ -45,38 +45,12 @@ layout_mode = 2
 text = "current carpet:"
 horizontal_alignment = 1
 
-[node name="CurrentCarpet" type="GridContainer" parent="GUI/Options"]
-layout_mode = 2
-size_flags_horizontal = 4
-columns = 3
-script = ExtResource("3_cyewu")
-
-[node name="Q1" type="CheckButton" parent="GUI/Options/CurrentCarpet"]
+[node name="CarpetSelection" parent="GUI/Options" instance=ExtResource("3_12gnp")]
 layout_mode = 2
 
-[node name="Q2" type="CheckButton" parent="GUI/Options/CurrentCarpet"]
+[node name="ResetButton" type="Button" parent="GUI/Options"]
 layout_mode = 2
-
-[node name="Q3" type="CheckButton" parent="GUI/Options/CurrentCarpet"]
-layout_mode = 2
-
-[node name="Q4" type="CheckButton" parent="GUI/Options/CurrentCarpet"]
-layout_mode = 2
-
-[node name="Q5" type="CheckButton" parent="GUI/Options/CurrentCarpet"]
-layout_mode = 2
-
-[node name="Q6" type="CheckButton" parent="GUI/Options/CurrentCarpet"]
-layout_mode = 2
-
-[node name="Q7" type="CheckButton" parent="GUI/Options/CurrentCarpet"]
-layout_mode = 2
-
-[node name="Q8" type="CheckButton" parent="GUI/Options/CurrentCarpet"]
-layout_mode = 2
-
-[node name="Q9" type="CheckButton" parent="GUI/Options/CurrentCarpet"]
-layout_mode = 2
+text = "reset"
 
 [node name="BoxDimLabel" type="Label" parent="GUI/Options"]
 layout_mode = 2
@@ -94,4 +68,5 @@ vertical_alignment = 1
 [connection signal="pressed" from="GUI/Options/AccuracyButton" to="GUI" method="_on_button_pressed"]
 [connection signal="pressed" from="GUI/Options/AddLineButton" to="GUI" method="_new_line_pressed"]
 [connection signal="pressed" from="GUI/Options/DelLineButton" to="GUI" method="_del_line_pressed"]
-[connection signal="new_carpet" from="GUI/Options/CurrentCarpet" to="GUI" method="_on_current_carpet_new_carpet"]
+[connection signal="new_carpet" from="GUI/Options/CarpetSelection" to="GUI" method="_on_carpet_selection_new_carpet"]
+[connection signal="pressed" from="GUI/Options/ResetButton" to="GUI" method="_on_reset_pressed"]
