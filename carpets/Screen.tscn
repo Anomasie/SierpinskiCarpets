@@ -9,6 +9,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="GUI" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(800, 0)
 layout_mode = 2
 theme_override_constants/separation = 100
 script = ExtResource("1_ysbi1")
@@ -18,7 +19,14 @@ layout_mode = 2
 
 [node name="Options" type="VBoxContainer" parent="GUI"]
 layout_mode = 2
-size_flags_vertical = 4
+size_flags_horizontal = 4
+
+[node name="Panel" type="Label" parent="GUI/Options"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Sierpinski Carpets"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Button" type="Button" parent="GUI/Options"]
 layout_mode = 2
@@ -27,6 +35,7 @@ text = "improve accuracy"
 [node name="Label" type="Label" parent="GUI/Options"]
 layout_mode = 2
 text = "current carpet:"
+horizontal_alignment = 1
 
 [node name="CurrentCarpet" type="GridContainer" parent="GUI/Options"]
 layout_mode = 2
@@ -59,6 +68,19 @@ layout_mode = 2
 
 [node name="Q9" type="CheckButton" parent="GUI/Options/CurrentCarpet"]
 layout_mode = 2
+
+[node name="BoxDimLabel" type="Label" parent="GUI/Options"]
+layout_mode = 2
+size_flags_vertical = 10
+text = "current Box dimension:"
+vertical_alignment = 1
+
+[node name="BoxDim" type="Label" parent="GUI/Options"]
+layout_mode = 2
+size_flags_vertical = 8
+text = "ln3/ln2"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="pressed" from="GUI/Options/Button" to="GUI" method="_on_button_pressed"]
 [connection signal="new_carpet" from="GUI/Options/CurrentCarpet" to="GUI" method="_on_current_carpet_new_carpet"]
