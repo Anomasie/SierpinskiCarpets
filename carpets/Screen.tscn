@@ -47,6 +47,7 @@ horizontal_alignment = 1
 
 [node name="CurrentCarpet" type="GridContainer" parent="GUI/Options"]
 layout_mode = 2
+size_flags_horizontal = 4
 columns = 3
 script = ExtResource("3_cyewu")
 
