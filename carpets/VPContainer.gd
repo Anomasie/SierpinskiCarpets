@@ -32,7 +32,7 @@ func insert_self():
 	var screenshot = get_viewport().get_texture()
 	var image = screenshot.get_image()
 	image.crop(128*self.columns, 128*self.columns)
-	image.resize(Children[0].size.x, Children[0].size.y)
+	image.resize(128, 128)
 	var texture = ImageTexture.create_from_image(image)
 	
 	for i in len(Children):
