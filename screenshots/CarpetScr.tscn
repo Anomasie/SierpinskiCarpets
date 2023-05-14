@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://bu6hf6hxgvt05"]
+[gd_scene load_steps=3 format=3 uid="uid://ckbixxfqael8"]
 
-[ext_resource type="Script" path="res://screenshots/VPContainer.gd" id="1_rxud0"]
+[ext_resource type="Script" path="res://screenshots/CarpetScr.gd" id="1_raaxn"]
 [ext_resource type="Texture2D" uid="uid://c3sqdnrru6ovi" path="res://assets/quad.png" id="2_oju5h"]
 
 [node name="VPContainer" type="GridContainer"]
@@ -10,7 +10,7 @@ offset_bottom = 384.0
 theme_override_constants/h_separation = 0
 theme_override_constants/v_separation = 0
 columns = 3
-script = ExtResource("1_rxud0")
+script = ExtResource("1_raaxn")
 
 [node name="Q1" type="TextureRect" parent="."]
 layout_mode = 2

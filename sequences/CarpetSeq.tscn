@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://qtx3jibwwyey"]
 
 [ext_resource type="Texture2D" uid="uid://jchugfy84xci" path="res://assets/white.png" id="1_ee2vg"]
-[ext_resource type="Script" path="res://sequences/Texture.gd" id="1_peyd8"]
+[ext_resource type="Script" path="res://sequences/CarpetSeq.gd" id="2_kp8s3"]
 
 [node name="Fractal" type="TextureRect"]
 offset_right = 333.0
@@ -9,4 +9,4 @@ offset_bottom = 297.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture = ExtResource("1_ee2vg")
-script = ExtResource("1_peyd8")
+script = ExtResource("2_kp8s3")

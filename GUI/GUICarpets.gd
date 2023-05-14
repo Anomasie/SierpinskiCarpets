@@ -12,6 +12,7 @@ func _ready():
 
 func _on_button_pressed():
 	CarpetScr.insert_self()
+	CarpetSeq.increase_accuracy()
 
 func _new_line_pressed():
 	# carpet
@@ -50,3 +51,4 @@ func _on_carpet_selection_new_carpet():
 func _on_reset_pressed():
 	CarpetScr.load_coding([])
 	CarpetSelection.load_coding([])
+	CarpetSeq.draw_coding([], 1)

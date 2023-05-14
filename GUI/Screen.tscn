@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://00d454c7f02u"]
 
 [ext_resource type="Script" path="res://GUI/GUICarpets.gd" id="1_o1fes"]
-[ext_resource type="PackedScene" uid="uid://bu6hf6hxgvt05" path="res://screenshots/CarpetScr.tscn" id="2_l1y2f"]
+[ext_resource type="PackedScene" uid="uid://ckbixxfqael8" path="res://screenshots/CarpetScr.tscn" id="2_l1y2f"]
 [ext_resource type="PackedScene" uid="uid://cnbnf33hrtpop" path="res://GUI/CarpetSelection.tscn" id="3_x14br"]
 [ext_resource type="PackedScene" uid="uid://qtx3jibwwyey" path="res://sequences/CarpetSeq.tscn" id="4_mumtj"]
 
@@ -76,7 +76,10 @@ size_flags_vertical = 0
 
 [node name="Label" type="Label" parent="GUI/CarpetSeqBox"]
 layout_mode = 2
-text = "end result"
+text = "construction using different properties
+
+left: self-similarity
+right: sequence space coding"
 horizontal_alignment = 2
 autowrap_mode = 3
 
