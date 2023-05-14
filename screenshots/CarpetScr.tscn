@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bu6hf6hxgvt05"]
 
-[ext_resource type="Script" path="res://carpets/VPContainer.gd" id="2_edwtn"]
-[ext_resource type="Texture2D" uid="uid://c3sqdnrru6ovi" path="res://assets/quad.png" id="3_xxjod"]
+[ext_resource type="Script" path="res://screenshots/VPContainer.gd" id="1_rxud0"]
+[ext_resource type="Texture2D" uid="uid://c3sqdnrru6ovi" path="res://assets/quad.png" id="2_oju5h"]
 
 [node name="VPContainer" type="GridContainer"]
 clip_contents = true
@@ -10,40 +10,40 @@ offset_bottom = 384.0
 theme_override_constants/h_separation = 0
 theme_override_constants/v_separation = 0
 columns = 3
-script = ExtResource("2_edwtn")
+script = ExtResource("1_rxud0")
 
 [node name="Q1" type="TextureRect" parent="."]
 layout_mode = 2
-texture = ExtResource("3_xxjod")
+texture = ExtResource("2_oju5h")
 
 [node name="Q2" type="TextureRect" parent="."]
 layout_mode = 2
-texture = ExtResource("3_xxjod")
+texture = ExtResource("2_oju5h")
 
 [node name="Q3" type="TextureRect" parent="."]
 layout_mode = 2
-texture = ExtResource("3_xxjod")
+texture = ExtResource("2_oju5h")
 
 [node name="Q4" type="TextureRect" parent="."]
 layout_mode = 2
-texture = ExtResource("3_xxjod")
+texture = ExtResource("2_oju5h")
 
 [node name="Q5" type="TextureRect" parent="."]
 layout_mode = 2
-texture = ExtResource("3_xxjod")
+texture = ExtResource("2_oju5h")
 
 [node name="Q6" type="TextureRect" parent="."]
 layout_mode = 2
-texture = ExtResource("3_xxjod")
+texture = ExtResource("2_oju5h")
 
 [node name="Q7" type="TextureRect" parent="."]
 layout_mode = 2
-texture = ExtResource("3_xxjod")
+texture = ExtResource("2_oju5h")
 
 [node name="Q8" type="TextureRect" parent="."]
 layout_mode = 2
-texture = ExtResource("3_xxjod")
+texture = ExtResource("2_oju5h")
 
 [node name="Q9" type="TextureRect" parent="."]
 layout_mode = 2
-texture = ExtResource("3_xxjod")
+texture = ExtResource("2_oju5h")

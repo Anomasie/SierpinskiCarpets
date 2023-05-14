@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Sierpinski Carpets"
-run/main_scene="res://carpets/Screen.tscn"
+run/main_scene="res://GUI/Screen.tscn"
 config/features=PackedStringArray("4.0", "GL Compatibility")
 boot_splash/bg_color=Color(0, 0, 0, 1)
 config/icon="res://assets/favicon.png"
